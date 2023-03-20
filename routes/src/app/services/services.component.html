@@ -1,0 +1,19 @@
+<h1>List Of Services Available</h1>
+    <!-- <ul class="items">
+        <li *ngFor="let service of services">
+             <button href="" (click)="onSelect(service.no)">{{service.name}}</button>    -->
+        <!-- </li> -->
+    <!-- </ul> --> 
+        <table *ngIf='services.length'>
+            <tr>
+                <th>BANK NAME</th>
+                <th>BANK LOCATION</th>
+                <th>BANK ACCOUNT TYPE</th>
+            </tr>
+            <tr *ngFor='let service of services'>
+            
+            <td>{{service.no}}</td>
+            <td>{{service.name}}</td>
+            </tr>
+        </table>
+        
